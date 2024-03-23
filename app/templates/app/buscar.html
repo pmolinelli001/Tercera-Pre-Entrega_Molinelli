@@ -1,0 +1,15 @@
+{%extends "app/index.html"%}
+
+{%block titulo%}
+<p class="lead text-white-50 mb-4">Buscar Art
+{%endblock titulo%}
+
+{%block contenido%}
+
+<form action="{% url 'encontrarArt'%}" method="get">
+    {% csrf_token %}
+    <p>Ingrese profesion a buscar: <input type="text" name="buscar" id="buscar"></p>
+    <input type="submit" value="Buscar">
+</form>
+
+{%endblock contenido%}

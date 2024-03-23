@@ -1,0 +1,32 @@
+{%extends "app/index.html"%}
+
+{%block titulo%}
+<p class="lead text-white-50 mb-4">Nuestros seguros de autos te respaldan en cada kilómetro. Obtén una cotización personalizada y selecciona la protección ideal para ti</p>
+
+{%endblock titulo%}
+
+{%block contenido%}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Marca del auto</th>
+            <th>Año</th>
+            <th>Precio</th>       
+            <th>Modelo</th>
+            <th>Codigo postal</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for auto in Auto  %}
+        <tr>
+            <td>{{ auto.marca_del_auto }}</td>
+            <td>{{ auto.año }}</td>
+            <td>{{ auto.precio }}</td>
+            <td>{{ auto.modelo }}</td>
+            <td>{{ auto.codigo_postal }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+{%endblock contenido%}
+

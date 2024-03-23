@@ -1,0 +1,30 @@
+{%extends "app/index.html"%}
+
+{%block titulo%}
+<p class="lead text-white-50 mb-4">Con nuestros seguros laborales, trabaja tranquilo, vive seguro. Obtén una cotización personalizada y selecciona la protección ideal para ti</p>
+
+{%endblock titulo%}
+
+{%block contenido%}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Profesion-Oficio</th>
+            <th>Codigo_postal</th>
+            <th>Matricula</th>
+            <th>Año</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for art in Art %}
+        <tr>
+            <td>{{ art.profesion_oficio }}</td>
+            <td>{{ art.codigo_postal }}</td>
+            <td>{{ art.matricula }}</td>
+            <td>{{ art.año }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+
+{%endblock contenido%}

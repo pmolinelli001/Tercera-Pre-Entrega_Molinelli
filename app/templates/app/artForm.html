@@ -1,0 +1,17 @@
+{%extends "app/index.html"%}
+
+{%block titulo%}
+<p class="lead text-white-50 mb-4">formulario ART</p>
+
+{%endblock titulo%}
+
+{%block contenido%}
+<form action="{% url 'artcob'%}" method="post">
+    {% csrf_token %}
+    <table>
+        {{form.as_table }}
+    </TABLE>
+    <input type="submit" value="Cotizar">
+</form>
+
+{%endblock contenido%}
