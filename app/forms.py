@@ -42,5 +42,4 @@ class HogarForm(forms.Form):
         ('Departamento_Cuatro_Ambientes','Departamento_Cuatro_Ambientes'),
     )
     tipo_propiedad=forms.ChoiceField(choices=opciones_propiedad,required=True)
-    jardin = forms.BooleanField(required=True)
 

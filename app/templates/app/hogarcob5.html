@@ -10,15 +10,21 @@
     {% csrf_token %}
     <div class="row">
         <div class="col-md-6">
-            <h3>PH</h3>
-            <ul>
-                <li><strong>Precio Mensual:510</strong> {{ ph.precio }}</li>
-                <li><strong>Incendio:1500000</strong> {{ ph.incendio }}</li>
-                <li><strong>Catastrofe Natural:1000000</strong> {{ ph.catastrofe_natural }}</li>
-                <li><strong>Reposicion de Electrodomesticos:150000</strong> {{ ph.reposicion_de_electrodomesticos }}</li>
-                <li><strong>Robo:150000</strong> {{ ph.robo}}</li>
-                <li><strong>Daños en la vivienda:150000</strong> {{ ph.daños_vivienda }}</li>                
-            </ul>
+            <div class="card mb-4">
+                <div class="card-header bg-info text-black">
+                    <h3>PH</h3>
+                </div>
+                <div class="card-body">
+                    <ul ul class="list-unstyled">
+                        <li><strong>Precio Mensual:510</strong> {{ ph.precio }}</li>
+                        <li><strong>Incendio:1500000</strong> {{ ph.incendio }}</li>
+                        <li><strong>Catastrofe Natural:1000000</strong> {{ ph.catastrofe_natural }}</li>
+                        <li><strong>Reposicion de Electrodomesticos:150000</strong> {{ ph.reposicion_de_electrodomesticos }}</li>
+                        <li><strong>Robo:150000</strong> {{ ph.robo}}</li>
+                        <li><strong>Daños en la vivienda:150000</strong> {{ ph.daños_vivienda }}</li>                
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 

@@ -83,6 +83,8 @@
 }
 
 
+
+
 div {
   display:inline-block
 }
@@ -6702,6 +6704,8 @@ textarea.form-control-lg {
   color: #fff !important;
   background-color: RGBA(13, 110, 253, var(--bs-bg-opacity, 1)) !important;
 }
+
+
 
 .text-bg-secondary {
   color: #fff !important;

@@ -48,7 +48,6 @@ class Hogar(models.Model):
         ('Departamento_Cuatro_Ambientes','Departamento_Cuatro_Ambientes')
     )
     tipo_propiedad=models.CharField(max_length=30, choices=opciones_propiedad)
-    jardin = models.BooleanField(default=False)
     def __str__(self):
         return f"{self.tipo_propiedad}"
     class Meta: 

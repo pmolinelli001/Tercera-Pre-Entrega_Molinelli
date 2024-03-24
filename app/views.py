@@ -48,8 +48,7 @@ def hogarForm(request):
             hogar_codigo_postal=miForm.cleaned_data.get("codigo_postal")
             hogar_año=miForm.cleaned_data.get("año")
             hogar_tipo_propiedad=miForm.cleaned_data.get("tipo_propiedad")
-            hogar_jardin=miForm.cleaned_data.get("jardin")
-            hogar=Hogar(metros_cubiertos=hogar_metros_cubiertos,codigo_postal=hogar_codigo_postal,año=hogar_año,tipo_propiedad=hogar_tipo_propiedad,jardin=hogar_jardin)
+            hogar=Hogar(metros_cubiertos=hogar_metros_cubiertos,codigo_postal=hogar_codigo_postal,año=hogar_año,tipo_propiedad=hogar_tipo_propiedad)
             hogar.save()
             contexto={'hogar':Hogar.objects.all()}
             return render(request,"app/index.html")

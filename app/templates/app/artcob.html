@@ -11,24 +11,37 @@
     {% csrf_token %}
     <div class="row">
         <div class="col-md-6">
-            <h3>Trabajo Independiente</h3>
-            <ul>
-                <li><strong>Precio Mensual:510</strong> {{ independiente.precio }}</li>
-                <li><strong>Muerte Accidental:1500000</strong> {{ independiente.muerte_accidental }}</li>
-                <li><strong>Invalidez Parcial/Total Permanente:1000000</strong> {{ independiente.invalidez_parcial_total_permanente }}</li>
-                <li><strong>Gastos Asistencia Médica:150000</strong> {{ independiente.gastos_asistencia_medica }}</li>
-            </ul>
+            <div class="card mb-4">
+                <div class="card-header bg-success text-white">
+                    <h3 class="card-title">Trabajo Independiente</h3>
+                </div>
+                <div class="card-body">
+                    <ul ul class="list-unstyled">
+                        <li><strong>Precio Mensual:</strong>$510 {{ independiente.precio }}</li>
+                        <li><strong>Muerte Accidental:</strong>$1500000 {{ independiente.muerte_accidental }}</li>
+                        <li><strong>Invalidez Parcial/Total Permanente:</strong>$1000000 {{ independiente.invalidez_parcial_total_permanente }}</li>
+                        <li><strong>Gastos Asistencia Médica:</strong>$150000 {{ independiente.gastos_asistencia_medica }}</li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="col-md-6">
-            <h3>Relacion de Dependencia</h3>
-            <ul>
-                <li><strong>Precio Mensual:1000</strong> {{ dependencia.precio}}</li>
-                <li><strong>Muerte Accidental:2500000</strong> {{ dependencia.muerte_accidental }}</li>
-                <li><strong>Invalidez Parcial/Total Permanente:1500000</strong> {{ dependencia.invalidez_parcial_total_permanente }}</li>
-                <li><strong>Gastos Asistencia Médica:250000</strong> {{ dependencia.gastos_asistencia_medica }}</li>
-            </ul>
+            <div class="card mb-4">
+                <div class="card-header bg-success text-white">
+                    <h3 class="card-title">Relación de Dependencia</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li><strong>Precio Mensual:</strong> $1000{{ dependencia.precio}}</li>
+                        <li><strong>Muerte Accidental:</strong> $2500000{{ dependencia.muerte_accidental }}</li>
+                        <li><strong>Invalidez Parcial/Total Permanente:</strong> $1500000{{ dependencia.invalidez_parcial_total_permanente }}</li>
+                        <li><strong>Gastos Asistencia Médica:</strong> $250000{{ dependencia.gastos_asistencia_medica }}</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 
 {% endblock contenido %}
+
 
